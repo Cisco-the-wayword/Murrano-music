@@ -1,6 +1,13 @@
 import React from 'react';
 import '../stylesheets/HomePage.css';
-import '../Images';
+import communitycard from '../Images/community-card.png';
+import distributecards from '../Images/distribute-cards.png';
+import listencard from '../Images/listen-card.png';
+import makebeatcard from '../Images/make-beat-card.png';
+import mixingcard from '../Images/mixing-card.png';
+import promotemusiccard from '../Images/promote-music.png';
+import recordcard from '../Images/record-card.png';
+import rightarrowicon27 from '../Images/right-arrow-icon-27.png';
 
 const HomePage = () => {
     return (
@@ -27,7 +34,7 @@ const HomePage = () => {
             </nav>
             <section className="action">
                 <div className="row">
-                    <div className="image-focus"><img src="../Images/distribute-cards.png" alt="" /></div>
+                    <div className="image-focus"><img src={distributecards} alt="distribute-cards" /></div>
                     <div className="detail">
                         <p className="detail-text">Distribute to all 243 music streaming platforms including Apple Music,
                             Spotify, Audiomack, Youtube and more</p>
@@ -42,10 +49,10 @@ const HomePage = () => {
                             and brand to music lovers.</p>
                         <div className="detail-button"> <a className="head-button" href="https://google.com">PROMOTE MY MUSIC</a> </div>
                     </div>
-                    <div className="image-focus"><img src="../Images/promote-music.png" alt="" /></div>
+                    <div className="image-focus"><img src={promotemusiccard} alt="" /></div>
                 </div>
                 <div className="row">
-                    <div className="image-focus"><img src="../Images/make-beat-card.png" alt="" /></div>
+                    <div className="image-focus"><img src={makebeatcard} alt="" /></div>
                     <div className="detail">
                         <p className="detail-text">Get a custom beat that suites your artistry and your style</p>
                         <div className="detail-button"> <a className="head-button" href="https://google.com">MAKE ME A BEAT</a> </div>
@@ -56,10 +63,10 @@ const HomePage = () => {
                         <p className="detail-text">Get high quality mixes and mastering of your recorded hit!</p>
                         <div className="detail-button"> <a className="head-button" href="https://google.com">MIXING & MASTERING</a> </div>
                     </div>
-                    <div className="image-focus"><img src="../Images/mixing-card.png" alt="" /></div>
+                    <div className="image-focus"><img src={mixingcard} alt="" /></div>
                 </div>
                 <div className="row">
-                    <div className="image-focus"><img src="../Images/record-card.png" alt="" /></div>
+                    <div className="image-focus"><img src={recordcard} alt="" /></div>
                     <div className="detail">
                         <p className="detail-text">Record your next hit song with the best engineers in the studio or the
                             comfort of your home</p>
@@ -71,10 +78,10 @@ const HomePage = () => {
                         <p className="detail-text">Listen to playlists that fits perfectly into your current mood</p>
                         <div className="detail-button"> <a className="head-button" href="https://google.com">LISTEN TO PLAYLISTS</a> </div>
                     </div>
-                    <div className="image-focus"><img src="../Images/listen-card.png" alt="" /></div>
+                    <div className="image-focus"><img src={listencard} alt="" /></div>
                 </div>
                 <div className="row">
-                    <div className="image-focus"><img src="../Images/community-card.png" alt="" /></div>
+                    <div className="image-focus"><img src={communitycard} alt="" /></div>
                     <div className="detail">
                         <h2 id="community">Join The Music Community</h2>
                         <p id="community-text">Get info about everything music from news to playlists and exciting new music directly in your inbox</p>
@@ -83,7 +90,7 @@ const HomePage = () => {
                                 <label>
                                     <div className="input-wrapper">
                                         <input type="email" className="label" id="email" name="email" placeholder="Email" required />
-                                        <button type="submit" className="arrow-button"><img id="arrow-button" src="../Images/right-arrow-icon-27.png" alt="" /></button>
+                                        <button type="submit" className="arrow-button"><img id="arrow-button" src={rightarrowicon27} alt="" /></button>
                                     </div>
                                     <small id="email_error" className="error">Please enter a valid email address</small>
                                 </label>
