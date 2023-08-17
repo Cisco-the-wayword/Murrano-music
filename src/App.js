@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <HomePage /> {/* Render the HomePage component */}
+      <HomePage />
     </div>
   );
 }
